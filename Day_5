@@ -1,0 +1,122 @@
+Day 5:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+1. create a Virtual Network:
+Step 1: Navigate to Virtual Network in menu bar [Located in top left corner of home] (or) you can search Virtual Netwrok in Search bar.
+Step 2: Select on CREATE to create a Vnet.
+Step 3: Enter the necessary details: 
+        a. Resource Group name
+        b. Vnet name.
+        c. Region.
+Step 4: Go to IP addresses and create a new address.
+Step 5: Click on Add subnet, and enter the subnet name "myBackendSubnet" and enter the IP address. Once done click on CREATE to create a subnet.
+Step 6: Go to the SECURITY tab, over there enable "AZURE BASTION HOST" and enter BastionHost IP.
+Step 7: Then click on CREATE when you go to review+create.
+Step 8: Once depolyment is complete, go to resource to view your Vnet.
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Create a NAT Gateway:
+Step 1: Search for NAT Gateway in the Search bar.
+Step 2: Enter the necessary details:
+      -> Resource Group
+      -> NAT Gateway name
+      -> Region
+      -> Availability Zone
+      -> IDLE time
+Step 3: Go to the OUTBOUND IP, enter or select these details:
+      -> Public IP address: Create or select a new IP Public.
+Step 4: Select the Subnet tab, then select the Vnet and click on the backendsubnet you created.
+Step 5: Then click on CREATE when you go to review+create.
+Step 6: Once depolyment is complete, go to resource to view your NAT Gaeway.
+
+
+___________________________________________________________________________________________________________________________________________________________________________________________
+
+
+3. Create a External Load Balancer:
+Step 1: Search for Load Balancer in the Search bar.
+Step 2: Enter the necessary details:
+      -> Resource Group
+      -> Load Balancer name
+      -> Region
+      -> Type: Public
+      -> Tier
+      -> SKU
+Step 3: Go to the Frontend IP Configuration, click on "+ADD" to add a Frontend IP configuration.
+Step 4: Enter the necessary details:
+      -> Frontend IP Configuration name
+      -> IPv4 or IPv6
+      -> Select the Vnet and the Subnet.
+      -> IP address: Create a new Public IP address and give the name.
+      -> Zone-reductant
+      -> Select ADD to add Frontend IP Configuration.
+Step 5: Go to the Backend Pools, click on "+ADD" to add a Backend Pools.
+Step 4: Enter the necessary details:
+      -> Backend Pool name
+      -> Select the Vnet [Resorce group] in Virtual Network.
+      -> Backend Pool Configuration: IP address
+      -> IP address: Create a new Public IP address and give the name.
+      -> Select IP addresses for Backend Pools.
+Step 6: Go to INBOUND RULES and under Load Balancing rule click on "+ADD".
+Step 7: Enter the necessary details:
+      -> Name
+      -> IPv4 or IPv6
+      -> Frontend IP address
+      -> Backend Pool
+      -> Health Probe: Create a new one by entering the name and protocol. 
+      -> Session Persistence
+      -> Idle Timeout: 15mins
+      -> Enable TCP reset
+      -> Disable floating IP
+      Now, click on "ADD" to add load balancer rule.
+Step 8:Then click on CREATE when you go to review+create.
+Step 9: Once depolyment is complete, go to resource to view your External Load Balancer.
+
+
+________________________________________________________________________________________________________________________________________________________________________________________
+
+
+3. Create a Internal Load Balancer:
+Step 1: Search for Load Balancer in the Search bar.
+Step 2: Enter the necessary details:
+      -> Resource Group
+      -> Load Balancer name
+      -> Region
+      -> Type: Internal
+      -> Tier
+      -> SKU
+Step 3: Go to the Frontend IP Configuration, click on "+ADD" to add a Frontend IP configuration.
+Step 4: Enter the necessary details:
+      -> Frontend IP Configuration name
+      -> IPv4 or IPv6
+      -> IP address: Create a new Public IP address and give the name.
+      -> Select the Vnet and the Subnet.
+      -> Zone-reductant
+      -> Select ADD to add Frontend IP Configuration.
+Step 5: Go to the Backend Pools, click on "+ADD" to add a Backend Pools.
+Step 4: Enter the necessary details:
+      -> Backend Pool name
+      -> Select the Vnet [Resorce group] in Virtual Network.
+      -> Backend Pool Configuration: IP address
+      -> IP address: Create a new Public IP address and give the name.
+      -> Select IP addresses for Backend Pools, resource name will be automated.
+Step 6: Go to INBOUND RULES and under Load Balancing rule click on "+ADD".
+Step 7: Enter the necessary details:
+      -> Name
+      -> IPv4 or IPv6
+      -> Frontend IP address
+      -> Backend Pool
+      -> Health Probe: Create a new one by entering the name and protocol. 
+      -> Session Persistence
+      -> Idle Timeout: 15mins
+      -> Enable TCP reset
+      -> Disable floating IP
+      Now, click on "ADD" to add load balancer rule.
+Step 8:Then click on CREATE when you go to review+create.
+Step 9: Once depolyment is complete, go to resource to view your External Load Balancer.
