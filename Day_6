@@ -1,0 +1,22 @@
+Day 6:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Create Point to Site on Azure, A Point-to-Site (P2S) VPN gateway lets you create a secure connection to your virtual network from an individual computer:
+
+Step 1: Create a Virtual Network.
+Step 2: Cnfigure the Vnet by providing Vnet name, Resource Group, and location.
+Step 3: Create a Gateway Subnet.
+Step 4: Create a Virtual Network Gateway.
+Step 5: Configure the Virtual Network Gateway by selecting appropriate Subscription, Resource Group and Vnet.
+Step 6: Generate a root certificate.
+Step 7: Download the VPN ckient.
+Step 8: Install the VPN client on client machines.
+Step 9: Connect to Vnet.
+Step 10: Verify the connection.
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________
