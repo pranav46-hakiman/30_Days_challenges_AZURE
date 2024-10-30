@@ -41,7 +41,7 @@ ________________________________________________________________________________
 
 ---> steps to create a private and public subnets:
 Step 1: In home page, open the already created Virtual Machine.
-Step 2: Go to the "SUBNETS" in the menu bar located in your Virtual Machine.
+Step 2: Go to the "SUBNETS" in the menu bar located in your Virtual Network.
 Step 3: Click on the "ADD" to create either a Public or Private Subnet.
 Step 4: When adding public subnet click on no to add Private access.
 Step 5: When adding private subnet click on yes to add Private access.
