@@ -11,7 +11,7 @@ Step 2: Enter the necessary details:
         a. Storage Accounts name
         b. Performance - Standard
         c. Region
-        d. 
+        d. Performance
         e. Access Tier - hot
 Step 3: Then click on CREATE when you go to review+create.
 Step 4: Once depolyment is complete, go to resource group to view your Storage Account.
