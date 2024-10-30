@@ -1,0 +1,47 @@
+Day 7:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Task 7: Hosting a Website using BLOB STORAGE:
+
+Step 1: You can search STORAGE ACCOUNTS in Search bar.
+Step 2: Enter the necessary details: 
+        a. Storage Accounts name
+        b. Performance - Standard
+        c. Region
+        d. 
+        e. Access Tier - hot
+Step 3: Then click on CREATE when you go to review+create.
+Step 4: Once depolyment is complete, go to resource group to view your Storage Account.
+Step 5: Go to CONTAINERS in the menu in Storage Account and add a container named input. or they name you want to give to your container.
+Step 6: Uplaod any file from your computer to the Container. For viewing the file you uploaded, click on the file and click on "EDIT".
+
+--> Hosting a website on BLOB STORAGE:
+Step 7: Launch VISUAL STUDIO CODE 
+Step 8: Search AZURE STORAGE in the extensions and install it.
+Step 9:  Go to STATIC WEBSITE in the menu bar of your STORAGE ACCOUNT.
+Step 10: CLick on ENABLE to host your Static Website.
+Step 11: Enter the details: 
+      a. Index documennt name.
+      b. Error document name.
+Step 12: Click on save.
+
+Step 13: Now, create a new VSC Window and in that create a new folder.
+Step 14: In that Folder create two HTML files: 
+      a. index file save with .html extension
+      b. error file save with .html extension
+Step 15: Deploy whatever text you want to be on that website and right-click on the folder you created.
+Step 16: Select the SUBSCRIPTION containing storage account.
+Step 17: VSC will now uplaod you file to Web ENDPOINT.
+Step 18: A notification will pop-up on your bottom right of your page, click on that to view your WEBSITE.
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
