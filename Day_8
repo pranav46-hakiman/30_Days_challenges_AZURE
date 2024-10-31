@@ -1,0 +1,45 @@
+Day 8:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Create a Vnet with 2 Subnets:
+Step 1: Navigate to Virtual Network in menu bar [Located in top left corner of home] (or) you can search Virtual Netwrok in Search bar.
+Step 2: Select on CREATE to create a Vnet.
+Step 3: Enter the necessary details: 
+        a. Resource Group name
+        b. Vnet name.
+        c. Region.
+Step 5: once reviewed, click on "CREATE" to create the Virtual Network.
+Step 6: Once deployment is complete, you can click on go to resource to view the Virtual Network.
+Step 7: Under ADDRESS SPACE in the setiings, add teo "CIDR" blocks for the subnets you want to create.
+Step 8: Click on SAVE to save the CIDR blocks for your Vnet and Subnets.
+Step 9: Under the SUBNETS section, click on the "ADD" button to create two subnets. And in the address range give the CIDR blocks range.
+Step 10: Click on ADD to add you Subnets.
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Launch VMS into Availability Set:
+Step 1: Navigate to Virtual Machines in menu bar [Located in top left corner of home] (or) you can search Virtual machines in Search bar.
+Step 2: Select Azure Virtual Machine.
+Step 3: Enter the following details:*
+      -> Resource Group: you can create a new one or select the existing one.   [ your choice ]
+      -> Virtual Machine name
+      -> Region
+      -> Image
+      -> Size
+      -> In administrator account : enter Username, password and Confirm Password.
+Step 4: Select the AVAILABILITY SET in the Availability Options.
+Step 5: Create a new AVAILIBILITY SET and click to create to save your availability set.
+Step 6: Click on "REVIEW + CREATE".
+Step 7: once reviewed, click on "CREATE" to create the Virtual Machine.
+Step 8: Once deployment is complete, you can click on go to resource to view the Virtual Machine.
+NOTE:
+Step 9: Repeat the steps from 1-7 to create another Virtual Machine
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
