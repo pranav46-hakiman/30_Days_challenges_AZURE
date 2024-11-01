@@ -1,0 +1,29 @@
+Day 9:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Creating a Snapshot of the VM:
+Step 1: Go to the already existing Virtual Machine.
+Step 2: In the VM, go to settings and click on disks.
+Step 3: Create a new disk and Click on create to CREATE a new snapshot.
+Step 4: Enter the following details:
+      a. SS Name
+      b. Snapshot Type - Full
+Step 5: Click on SAVE to save your SS.
+Step 6: Create a disk from the Snapshot.
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Creating Virtual Machine from VHD:
+Step 1: Create a Virtual Machine from the Disks.
+Step 2: Select create to create a Virtual Machine.
+Step 3: Chose the disks created from the snapshot in the DISKS.
+Step 4: Go to REVIEW+CREATE and click on CREATE button to create VM.
+Step 5: Once deployment is complete, go to RESOURCE to view your VM.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________
