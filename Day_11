@@ -1,0 +1,29 @@
+Day 11:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Assigned a Azure Policy:
+Step 1: Search for Azure and navigate to to Policy.
+Step 2: Search for ALLOWED LOCATIONS in
+Step 3: Click on ASSIGN POLICY.
+Step 4: Enter the following details:
+       a. Scope
+       b. Resource Group
+       c. Policy Definitions: 
+       d. Allowed Locations
+       e. Name
+       f. Description
+Step 5: Go to paramenters and select "CENTRAL INDIA"
+Step 6: Enter the CREATE button to create the POLICY.
+
+--> For Testing the Policy, I created:
+
+1. A Virtual Network with the same parameter I entered for the creation of Policy: Success
+
+2. A Storage Account with different parameter (East US): Failure
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________
