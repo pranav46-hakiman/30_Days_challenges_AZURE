@@ -1,0 +1,49 @@
+Day 12:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+1. Connecting Virtual Machine through Azure Bastion:
+
+--> Create a Virtual Network:
+Step 1: Navigate to Virtual Network in menu bar [Located in top left corner of home] (or) you can search Virtual Netwrok in Search bar.
+Step 2: Select on CREATE to create a Vnet.
+Step 3: Enter the necessary details: 
+        a. Resource Group name
+        b. Vnet name.
+        c. Region.
+Step 4: Go to IP addresses and create a new address.
+Step 5: Go to security and enable Azure Bastion. Automatically a Azure Bastion Host name and Azure Bastion public IP address will be created.
+Step 6: Then click on CREATE when you go to review+create.
+Step 7: Once depolyment is complete, go to resource to view your Vnet.
+Step 8: Click on subnets to add new subnets in your Vnet.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--> Create a Virtual Machine:
+Step 1: Navigate to Virtual Machines in menu bar [Located in top left corner of home] (or) you can search Virtual machines in Search bar.
+Step 2: Select Azure Virtual Machine.
+Step 3: Enter the following details:
+      -> Resource Group: you can create a new one or select the existing one.   [ your choice ]
+      -> Virtual Machine name
+      -> Region
+      -> Image
+      -> Size
+      -> In administrator account : enter Username, password and Confirm Password.
+Step 4: Move on to Disk and select Standard SSD.
+Step 5: Leave Others as it is.
+Step 6: Click on "REVIEW + CREATE".
+Step 7: once reviewed, click on "CREATE" to create the Virtual Machine.
+Step 8: Once deployment is complete, you can click on go to resource to view the Virtual Machine.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--> Connecting Virtual Machine via Azure Bastion:
+Step 1: Go to the VM you created.
+Step 2: Now navigate to Bastion in the VM menu settings.
+Step 3: Enter the Username and Password.
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
