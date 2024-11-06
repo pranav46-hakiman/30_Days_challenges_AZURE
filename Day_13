@@ -1,0 +1,43 @@
+Day 13:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+1. Azure Queue Storage:
+Step 1: Create a new Resource Group:
+
+--> Create a Storage Account:
+Step 1: You can search STORAGE ACCOUNTS in Search bar.
+Step 2: Enter the necessary details: 
+        a. Storage Accounts name
+        b. Performance - Standard
+        c. Region
+        d. Performance
+        e. Access Tier - hot
+Step 3: Then click on CREATE when you go to review+create.
+Step 4: Once depolyment is complete, go to resource group to view your Storage Account.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Step 2: Click on QUEUE which is located in the overview of Storage Account.
+Step 3: Enter the necessary details: 
+        a. Queue name
+Step 4: In Queue, you can add messages, dequeue messages and clear messages.
+Step 5: Create 2 LOGIC APPS.
+
+--> Steps to create LOGIC APP:
+Step 1:  You can search LOGIC APP in Search bar.
+Step 2: Enter the necessary details: 
+        a. Logic App name
+        b. Subscription
+        c. Region
+Step 3: Then click on CREATE when you go to review+create.
+Step 4: Once depolyment is complete, go to resource group to view your Logic App.
+Step 4: Go to Logic App Designer and click on add trigger to add the following in LA1:
+      a. HTTP
+      b. Azure Queue
+Step 5: Repeat the step 4 for LA2 and add what ever trigger you want to.
+Step 6: Then for testing click on RUN in Logic App's Overview page.
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
