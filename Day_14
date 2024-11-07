@@ -1,0 +1,44 @@
+Day 14:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Azure Table Storage:
+Step 1: Create a new Resource Group:
+
+--> Create a Storage Account:
+Step 1: You can search STORAGE ACCOUNTS in Search bar.
+Step 2: Enter the necessary details: 
+        a. Storage Accounts name
+        b. Performance - Standard
+        c. Region
+        d. Performance
+        e. Access Tier - hot
+Step 3: Then click on CREATE when you go to review+create.
+Step 4: Once depolyment is complete, go to resource group to view your Storage Account.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Step 2: Click on Table which is located in the overview of Storage Account.
+Step 3: Enter the necessary details: 
+        a.Table name
+Step 4: In Table, you can add entities.
+Step 5: Create a LOGIC APPS.
+
+--> Steps to create LOGIC APP:
+Step 1: You can search LOGIC APP in Search bar.
+Step 2: Enter the necessary details: 
+        a. Logic App name
+        b. Subscription
+        c. Region
+Step 3: Then click on CREATE when you go to review + create.
+Step 4: Once depolyment is complete, go to resource group to view your Logic App.
+Step 4: Go to Logic App Designer and click on add trigger to add the following in your logic app:
+      a. Schedule
+      b. Azure Table
+Step 5: Then for testing click on RUN in Logic App's Overview page.
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________
