@@ -1,0 +1,57 @@
+Day 16:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Create a Bridge Network:
+
+--> Virtual Network:
+Step 1: Navigate to Virtual Network in menu bar [Located in top left corner of home] (or) you can search Virtual Netwrok in Search bar.
+Step 2: Select on CREATE to create a Vnet.
+Step 3: Enter the necessary details: 
+        a. Resource Group name
+        b. Vnet name.
+        c. Region.
+Step 4: Go to IP addresses and create a new address.
+Step 5: In the "SECURITY" section, you can configure the Azure firewall, Azure DDoS Protection, and Azure Virtual WAN.
+Step 6: Click on Add subnet, and enter the subnet name and enter the IP address. Once done click on CREATE to create a subnet.
+Step 7: Then click on CREATE when you go to review+create.
+Step 8: Once depolyment is complete, go to resource to view your Vnet.
+Step 9: Click on subnets to add new subnets in your Vnet.
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Launch two Docker Containers:
+
+Step 1: Select "Container instances" from the left-hand navigation menu.
+Step 2: Enter the following details:
+      a. Container name
+      b. Region
+      c. Size
+Step 3: Under the "Networking" tab, you should see an option to "Associate with a subnet". Select the subnet that you want to associate with the container.
+Step 4: CLick on CREATE in REVIEW + CREATE tab.
+Step 5: Repeat the same steps for the second container instance.
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+3. Assign both containers with same network:
+
+For this while creating a CONTAINER INSTANCES:
+Step 1: Under NETWORKING tab, click on private.
+Step 2: Select the Vnet and Subnet that you want to assign to your Conatiner.
+Step 3: Repeat the same steps for Container 2.
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1.
