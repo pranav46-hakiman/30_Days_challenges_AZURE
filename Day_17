@@ -1,0 +1,58 @@
+Day 17:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Deploy Azure SQL Databases:
+Step 1: Navigate to Azure SQL in menu bar [Located in top left corner of home] (or) you can search Azure SQL in Search bar.
+Step 2: In Basics, enter the necessary details: 
+        a. Resource Group name
+        b. Admin Login name
+        c. Password 
+        d. Database name
+        e. Region
+        f. Create a server if server does not exist.
+        g. Subscription
+Step 3: In Networking, enter the necessary details: 
+        a. Public or Private Endpoints
+        b. Vnet Rules
+        c. Firewall if required
+        d. Connection method
+Step 4: In Additional Settings, enter the necessary details: 
+        a. Data Source DB
+        b. Server Collation
+        c. Collation DB 
+        d. Timezone
+Step 5: Then click on CREATE when you go to review+create.
+Step 6: Once depolyment is complete, go to resource to view your Azure SQL Database.
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Verifying Azure SQL [SSMS]:
+Step 1: Open the SSMS: Microsoft SQL Server Management Studio [latest version].
+Step 2: For connection, enter the necessary details: 
+        a. Server Type - Database Engine
+        b. Server Name
+        c. Authentication - SQL Server Authentication.
+        d. Username
+        e. Password
+Step 3: Once connection is done for testing, write the following code:
+------------------------------------------------------
+select @@VERSION
+select * from sys.databases
+select * from sys.objects
+select * from sys.dm_os_schedulers
+select * from sys.dm_os_sys_info
+select * from sys.dm_exec_requests
+select SERVERPROPERTY('EngineEdition')
+select * from sys.dm_user_db_resource_governance
+select * from sys.dm_os_job_object
+-------------------------------------------------------
+
+Step 4: Otherwise you can create a sample table for verification.
+
+
+___________________________________________________________________________________________________________________________________________________________________________________________________________
