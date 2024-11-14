@@ -1,0 +1,59 @@
+Day 18:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Create and Configure User Accounts:
+
+Step 1: Navigate to Microsoft Entra ID in menu bar [Located in top left corner of home] (or) you can search Microssoft Entra ID in Search bar.
+Step 2: In Overview, go to MANAGE TENANTS.
+Step 3: Return to Entra ID page.
+Step 4: Select Lisecenses.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---> Create a new User:
+Step 1: Select new Users in Entra ID menu and click on CREATE NEW USER.
+Step 2: Enter the necessary details: 
+        a. User pricipal name
+        b. Display name
+        c. Account generate password
+        d. Account enabled
+        e. Job title
+        f. Usage Location
+Step 3: Then click on CREATE when you go to review + create.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---> Invite an External User:
+Step 1: Select new Users in Entra ID menu and click on CREATE NEW USER.
+Step 2: Enter the necessary details: 
+        a. e-mail address
+        b. Display name
+        c. Send invite message
+        d. Description
+        e. Message
+        f. Job title
+        g. Usage Location
+Step 3: Then click on CREATE when you go to review + invite.
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Create Groups and add Members:
+Step 1: Navigate to Microsoft Entra ID in menu bar [Located in top left corner of home] (or) you can search Microssoft Entra ID in Search bar.
+Step 2: In Overview, go to Groups and select it.
+Step 3: Select "+new group" and enter the necessary details: 
+        a. Group type - security
+        b. Group name
+        c. Group description
+        d. Membership type
+        e. No memebers - selected
+Step 4: In add Members, search for and select the guest user you invited via e-mail.
+Step 5: Select create to deploy the Group.
+Step 6: Select the Groups and review it.
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
