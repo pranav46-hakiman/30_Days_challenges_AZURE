@@ -1,0 +1,57 @@
+Day 19:
+Step 0: https://portal.azure.com/#home
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Implement Management Groups:
+
+Step 1: Navigate to Microsoft Entra ID in menu bar [Located in top left corner of home] (or) you can search Microssoft Entra ID in Search bar.
+Step 2: In Manage blade, select PROPERTIES.
+Step 3: Review the Access Management for Azure resource area.
+Step 4: Select Management Group and click on "+CREATE".
+Step 5: Enter the following details:
+      a. Management Group ID:
+      b. Management Group display name and add.
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Review and Assign a built-in Azure role:
+
+Step 1: Select the Management Group you created.
+Step 2: Select IAM.
+Step 3: Select +ADD to add a role assignment.
+Step 4: Select the "VIRTUAL MACHINE CONTRIBUTER".
+Step 5: On the Members tab, select the member you want to add.
+Step 6: Click on REVIEW + ASSIGN.
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+3. Create a custom RBAC role:
+
+Step 1: Select the Management Group you created.
+Step 2: Select IAM.
+Step 3: Select +ADD to add a Custom role.
+Step 4: Enter the necessary details: 
+        a. Custom role name
+        b. Description
+        c. Baseline permissions - ROLE TO CLONE
+Step 5: In Permission tab select "+EXCLUDE PERMISSIONS" and select Microsoft.Support, select Other:Registers support resource.
+Step 6: On the Assignable Scope, ensure that management group is listed.
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+4. Monitor role assignments in the Activity Log:
+
+Step 1: Navigate to Activity Log in menu bar [Located in top left corner of home] (or) you can search Activity Log in Search bar.
+Step 2: Review the activites for role assignments.
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
