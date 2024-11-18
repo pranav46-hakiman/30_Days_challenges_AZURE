@@ -1,0 +1,83 @@
+Day 20:
+Step 0: https://portal.azure.com/#home
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Create an Azure Resource Manager Template:
+
+Step 1: Search Disks in search bar.
+Step 2: Click on CREATE and enter the following details:
+      a. Subscription
+      b. Resource Group
+      c. Disk name
+      d. Region
+      e. Source type
+      f. Size
+Step 3: Then click on CREATE when you go to review+create.
+Step 4: Once depolyment is complete, go to resource to view your DISKS.
+
+Step 5: Now go to AUTOMATION and select "EXPORT TEMPLATE".
+Step 6: Downlaod the Template.
+Step 7: Extract the downloaded file and save it in a separate folder.
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Edit an Azure Resource Manager and then redeploy the template:
+
+Step 1: Search "DEPLOY A CUSTOM TEMPLATE" in search bar.
+Step 2: On the Edit template page, clik on UPLOAD file to upload the extracted file.
+Step 3: Change the disks name to whatever you want the code.
+Step 4: And then Save your changes.
+Step 5: Click on Edit PARAMETERS and UPLOAD the Parameter file.
+Step 6: Enter the following details:
+      a. Subscription
+      b. Resource Group
+      c. Disk name
+      d. Region
+Step 7: Then click on CREATE when you go to review+create.
+Step 8: Once depolyment is complete, go to resource to view your EDITED DISKS.
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+3. Configure the Cloud Shell and deploy a Template with the Powershell:
+Step 1: Go to the Azure PowerShell and Select PoweShell.
+Step 2: On settings, Select MOUNT STORAGE and select your Free Subscription.
+Step 3: Select I WANT TO CREATE A NEW STORAGE ACCOUNT and enter the following details:
+      a. Subscription
+      b. Resource Group
+      c. Disk name
+      d. Region
+      e. Storage Account Name
+      f. FileShare - Create new
+Step 4: When completed select CREATE.
+Step 5: Upload both the PARAMETER and TEMPLATE file.
+Step 6: Make a change name.
+Step 7: To deploy use the resource group you create or create a new one.
+Step 8: New-AzResourceGroupDeployment -ResourceGroupName Task20 -TemplateFile template.json -TemplateParameterFile parameters.json
+Step 9: Then to confirm enter Get-AzDisk
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+4. Deploy a CludShell with Bash:
+
+Step 1: Select BASH in CloudShell.
+Step 2: Verify your files that are in ClouShell.
+Step 3: Enter "ls" in the editor page and navigate to the template JSON file.
+Step 4: Make a change. For example, change the disk name and save it.
+Step 5: To deploy to a resource group, use az deployment group create.
+Note:
+"az deployment group create --resource-group Task20 --template-file template.json --parameters parameters.json"
+Step 6: Confirm the disk was created.
+Note:
+"az disk list --output table"
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
