@@ -1,0 +1,111 @@
+Day 21:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Create a core services Virtual Machine and Virtual Network:
+
+---> Steps to create a Virtual machine is given below:
+
+Step 1: Navigate to Virtual Machines in menu bar [Located in top left corner of home] (or) you can search Virtual machines in Search bar.
+Step 2: Select Azure Virtual Machine.
+Step 3: Enter the following details:
+      -> Resource Group: you can create a new one or select the existing one.   [ your choice ]
+      -> Virtual Machine name - Task21VM
+      -> Region
+      -> Image
+      -> Size
+      -> In administrator account : enter Username, password and Confirm Password.
+Step 4: Move on to Networking, select create a new Vnet and enter the necessary details: 
+        a. Resource Group name - Task21
+        b. Vnet name - Task21Vnet
+        c. Region - Central India
+        d. IP Address - 10.0.0.0/16 and for subnet - 10.0.0.0/24
+Step 5: Move on to Monitoring and disable the BOOT DIAGNOSTICS.
+Step 6: Click on "REVIEW + CREATE".
+Step 7: once reviewed, click on "CREATE" to create the Virtual Machine.
+Step 8: Once deployment is complete, you can click on go to resource to view the Virtual Machine.
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Creating a VM in a different Vnet:
+
+---> Steps to create a Virtual machine is given below:
+
+Step 1: Navigate to Virtual Machines in menu bar [Located in top left corner of home] (or) you can search Virtual machines in Search bar.
+Step 2: Select Azure Virtual Machine.
+Step 3: Enter the following details:
+      -> Resource Group: you can create a new one or select the existing one.   [ your choice ]
+      -> Virtual Machine name - MVM
+      -> Region
+      -> Image
+      -> Size
+      -> In administrator account : enter Username, password and Confirm Password.
+Step 4: Move on to Networking, select create a new Vnet and enter the necessary details: 
+        a. Resource Group name - Task21
+        b. Vnet name - MVnet
+        c. Region - Central India
+        d. IP Address - 172.16.0.0/16 and for subnet - 172.16.0.0/24
+Step 5: Move on to Monitoring and disable the BOOT DIAGNOSTICS.
+Step 6: Click on "REVIEW + CREATE".
+Step 7: once reviewed, click on "CREATE" to create the Virtual Machine.
+Step 8: Once deployment is complete, you can click on go to resource to view the Virtual Machine.
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+3. Use Network Watchers to test the connection between VMs:
+
+Step 1: Navigate to Network Watchers in menu bar [Located in top left corner of home] (or) you can search Network Watchers in Search bar.
+Step 2: Select  Connection TroubleShoot and enter the following details:
+      a. Source Type
+      b. VM
+      c. Destination Type
+      d. IP Version
+      e. Protocol
+      f. Destination Port
+      g. Source Port
+      h. Diagnostic Tests
+Step 3: Select Run Diagnostic Tests.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+4. Confogure Virtual Network peerings between Virtual Networks:
+
+Step 1: In Task21Vnet, select the peerings.
+Step 2: Enter the following details:
+      a. Peering name
+      b. Vnet
+      c. Enable: 1. Allow Mvnet to access TaskVnet
+                 2. Allow Mvent to recieve forward traffic from TaskVnet
+      d. Peering link name
+      e. Allow Task21Vnet to access the peered vnet.
+Step 3: Switch to MVnet and verify the Vnet peering.
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+5. Create a custom Route:
+Step 1: Select the VM - Task21.
+Step 2: Select the Subnet and +create and enter the following details:
+      a. Name
+      b. Subnet address range
+Step 3: Navigate to Route Tables in menu bar [Located in top left corner of home] (or) you can search Route Tables in Search bar.
+Step 4: After the deplyment, go to the resource.
+Step 5: Select Routes and +ADD and enter the following tables:
+      a. Route name
+      b. Destination Type
+      c. IP address
+      d. HOP Type
+      e. HOP Address
+Step 6: Select +ADD when route is created.
+Step 7: Select the SUBNET and ASSOCIATE.
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
