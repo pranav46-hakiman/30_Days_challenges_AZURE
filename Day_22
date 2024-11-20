@@ -1,0 +1,150 @@
+Day 22:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Create a Vnet with Subnets using the portal:
+
+Step 1: Navigate to Virtual Network in menu bar [Located in top left corner of home] (or) you can search Virtual Netwrok in Search bar.
+Step 2: Select on CREATE to create a Vnet.
+Step 3: Enter the necessary details: 
+        a. Resource Group name
+        b. Vnet name.
+        c. Region.
+Step 4: Go to IP addresses and create a new address.
+Step 5: Click on Add subnet, and enter the two subnet name and enter the IP address. Once done click on CREATE to create a subnet.
+Step 6: Then click on CREATE when you go to review+create.
+Step 7: Once depolyment is complete, go to resource to view your Vnet.
+Step 8: Click on subnets to add new subnets in your Vnet.
+Step 9: In the Automation tab, click on EXPORT TEMPLATE.
+Step 10: Navigate to your local machine and extract the downloaded zip file.
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Create a Vnet and Subnets using a template:
+
+Step 1: Locate the downloaded template and parameter file.
+Step 2: Edit the file as you need.
+Step 3: The changes needed to be done in the TEMPLATE file:
+      a. Vnet name
+      b. IP Address
+      c. Subnet1 name
+      d. Subnet1 IP Address
+      e. Subnet2 name
+      f. Subnet2 IP Address
+Make sure to save after the changes.
+Step 4: Make changes to the PARAMETR file, only the Vnet name should be changed and save your changes.
+
+--> Deploy a custom template:
+Step 5: Build you own template.
+Step 6: In that load your template file and save it.
+Step 7: Now there will be an option called edit Parameter.
+Step 8: Select review + create.
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+3. Create and Configure communication between ASG and NSG:
+
+--> Create an Application Security Group:
+Step 1: You can search Application Security Group in Search bar.
+Step 2: Enter the necessary details: 
+        a. Resource Group name
+        b. ASG name
+        c. Region
+        d. Subscription
+tTep 3: Select review + create.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--> Create a Network Security group and associate it with ASG Subnet:
+Step 1: You can search Network Security Group in Search bar.
+Step 2: Enter the necessary details: 
+        a. Resource Group name
+        b. NSG name
+        c. Region
+        d. Subscription
+Step 3: Select review + create.
+Step 4: Go to subnets and associate the SSS subnet. Vnet: Task22Vnet
+Step 5: Click on OK to save the association.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--> Configure an Inbound Security Rule:
+Step 1: Go to Inbound Security Rules and Click on "+ADD".
+Step 2: Enter the necessary details:
+      a. Source
+      b. Source ASG
+      c. Source Port Ranges
+      d. Ranges
+      e. Destination
+      f. Service
+      g. Destination Port Ranges
+      h. Protocol
+      i. Action
+      j. Priority
+      k. Name
+Step 3: Click on Save.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-->  Configure an Outbound Security Rule:
+Step 1: Go to Outbound Security Rules and Click on "+ADD".
+Step 2: Enter the necessary details:
+      a. Source
+      b. Source ASG
+      c. Source Port Ranges
+      d. Ranges
+      e. Destination
+      f. Service
+      g. Destination Port Ranges
+      h. Protocol
+      i. Action
+      j. Priority
+      k. Name
+Step 3: Click on Save.
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+4. Configure Public and Private Azure DNS zones:
+
+--> Configure Public DNS Zones:
+Step 1: You can search Public DNS zomes in the search bar.
+Step 2: Enter the necessary details:
+      a. Subscription
+      b. Resource Group
+      c. Name - end with .com*
+      d. Region
+Step 3: Select review + create.
+Step 4: Go to resource and in Overview click on "+RECORD SET".
+Step 5: Enter the necessary details:
+      a. Name
+      b. Type
+      c. TTL
+      d. IP Address
+Step 6: Slect OK and Verify PranavDNS.com by running it in the COMMAND PROMPT.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--> Configure Private DNS zones:
+Step 1: You can search Private DNS zomes in the search bar.
+Step 2: Enter the necessary details:
+      a. Subscription
+      b. Resource Group
+      c. Name - end with .com*
+      d. Region
+Step 3: Slect review + create.
+Step 4: Go to Vnet Links and Link the Vnet.
+Step 5: Enter the necessary details:
+      a. Link name
+      b. Vnet
+Step 6: Slect create.
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
