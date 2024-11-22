@@ -1,0 +1,42 @@
+Day 24:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Azure Machine Learning:
+
+Step 1: You can search Azure Machine Learning in Search bar.
+Step 2: Enter the necessary details:
+      a. Name
+      b. Resource group
+      c. Storage Account
+      d. Region
+      e. Key Vault
+      f. Application Insights
+      g. Container Registry
+      h. Subscription
+Step 3: In the Networking, click on Public.
+Step 4: In Identity, select User assigned identity if you already have:
+      a. Storage Account
+      b. Key Vault
+      c. Application Insights
+      d. Container Registry
+otherwise it'll be automatically created.
+Step 5: Click on review + create.
+Step 6: Go to the resource group after the deployment.
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Launched my Azure Machine Learning Studio:
+
+Step 1: Go to resource and overview of your Azure ML will be displaced.
+Step 2: In the overview, click on LAUNCH ML STUDIO.
+Step 3: You can access you ML Studio.
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
