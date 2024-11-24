@@ -1,0 +1,88 @@
+Day 25:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Creating an Azure Data Factory:
+Step 1: You can search Azure Data Facotry in the search bar.
+Step 2: Clickon Create to create a data factory.
+Step 3: Enter the necessary details:
+      a. Subscription
+      b. Resource group
+      c. Name
+      d. Region
+      e. Version - V2
+Step 4: Click on CREATE in REVIEW+CREATE tab and wait for the deployment.
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+2. Creating an SQL Databse:
+Step 1: You can search SQL Database in search bar and click on CREATE to create one.
+Step 2: Enter the necessary details:
+      a. Subscription
+      b. Resource group
+      c. Database Name
+      d. Region
+      e. Compute + storage
+      f. Backup storage redundancy
+      g. Workload environment
+      h. Server
+Step 3: Click on CREATE in REVIEW+CREATE tab and wait for the deployment.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+3. Creating an Storage Account:
+Step 1: You can search STORAGE ACCOUNTS in Search bar.
+Step 2: Enter the necessary details: 
+        a. Storage Accounts name
+        b. Performance - Standard
+        c. Region
+        d. Performance
+        e. Access Tier - hot
+Step 3: Then click on CREATE when you go to review+create.
+Step 4: Once depolyment is complete, go to resource group to view your Storage Account.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+4. Creating a pipeline:
+Step 1: Click on add pipeline.
+Step 2: If u want change the name.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+5. Linking a Service:
+Step 1: Go to Manged and click on link service.
+Step 2: Select Blob Storage and enter the necessary details:
+      a. Name
+      b. Description
+      c. Authentication type
+      d. 
+      e. Account selection method
+      f. Azure subscription
+      g. Storage account name*
+      h. Server
+Step 3: Click on Test Connection for testing.
+Step If done, click on CREATE.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+6. Creating a Dataset:
+Step 1: Go to datasets in author and click on add.
+Step 2: Select Blob Storage.
+Step 3: Select the Format - CSV.
+Step 4: Name it.
+Step 5: Select the file location (browse).
+Step 6: Click on add to add Dataset.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
