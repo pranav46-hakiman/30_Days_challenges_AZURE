@@ -1,0 +1,68 @@
+Day 26:
+Step 0:
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Create an Azure DataBricks:
+Step 1: You can search DataBricks in the search bar.
+Step 2: Click on to create for creating an Azure DataBrick.
+Step 3: Enter the necessary details: 
+        a. Resource Group name
+        b. Subscription
+        c. DataBrick name
+        d. Region
+        e. Pricing tier - free trial
+Step 4: Once depolyment is complete, go to resource to view your Azure DataBrick.
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+2. Creating an Storage Account:
+Step 1: You can search STORAGE ACCOUNTS in Search bar.
+Step 2: Enter the necessary details: 
+        a. Storage Accounts name
+        b. Performance - Standard
+        c. Region
+        d. Performance
+        e. Access Tier - hot
+Step 3: Then click on CREATE when you go to review+create.
+Step 4: Once depolyment is complete, go to resource group to view your Storage Account.
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+3. Launching Azure DataBrick:
+Step 1: In Overview, click on Launch Databrick.
+Step 2: Enter your Microsoft mail for login in and enter the password.
+Step 3: It will take you to the Home page of the Databrick.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+4. Create a new CLuster in Az DataBricks:
+Step 1: In the menu click on create new cluster.
+Step 2: Enter the necessary details:
+      a. Cluster Mode
+      b. Cluster Name
+      c. Pool
+      d. DataBricks in Runtime version
+      e. Python version
+      f. Worker type
+      g. Driver type
+Step 3: Click on compute to create your Cluster.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+5. Creating Scripts in Az DataBricks:
+Step 1: Open a Noyebook in the Workspace which is located in the menu bar.
+Step 2: Select the Language you want to code with and enter the code.
+Step 3: For run, click on Shift + Enter key.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+6. Uploading file:
+STep 1: Open the conatiner and upload the JSON file in the STorage Account you created.
+Step 2: Go to the DataBrick and Script in scala.
+Step 3: Write the code...
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
