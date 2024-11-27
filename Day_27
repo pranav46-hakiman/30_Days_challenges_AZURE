@@ -1,0 +1,104 @@
+Day 27:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+1. Creating an Azure Elastic Pool:
+Step 1: Search Azure Elastic Pool in search bar and click on create to create one.
+Step 2: Enter the necessary details: 
+        a. Resource Group name
+        b. Subscription
+        c. Elastic Pool Name
+        d. Server
+        e. Compute+Storage
+Step 3: Create a server if you don't have one.
+Step 4: Once depolyment is complete, go to resource to view your
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+2. Creating an Sql Databse:
+Step 1: In ovierview CLick on the "+CREATE DATABASE".
+Step 2: THe details will be automatically taken from the created ELASTIC POOL for basics.
+Step 3: In Networking, enter the necessary details: 
+        a. Public or Private Endpoints
+        b. Vnet Rules
+        c. Firewall if required
+        d. Connection method
+Step 4: In Additional Settings go with sample database.
+Step 5: click on CREATE when you go to review+create.
+Step 6: Once depolyment is complete, go to resource to view your Azure SQL Database.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> creating another SQL Database:
+Creating an Sql Databse:
+Step 1: In ovierview CLick on the "+CREATE DATABASE".
+Step 2: THe details will be automatically taken from the created ELASTIC POOL for basics.
+Step 3: In Networking, enter the necessary details: 
+        a. Public or Private Endpoints
+        b. Vnet Rules
+        c. Firewall if required
+        d. Connection method
+Step 4: In Additional Settings, enter the necessary details: if required
+        a. Data Source DB
+        b. Server Collation
+        c. Collation DB 
+        d. Timezone
+Step 5: Then click on CREATE when you go to review+create.
+Step 6: Once depolyment is complete, go to resource to view your Azure SQL Database.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--> SIngle Database:
+Step 1: Navigate to Azure SQL in menu bar [Located in top left corner of home] (or) you can search Azure SQL in Search bar.
+Step 2: In Basics, enter the necessary details: 
+        a. Resource Group name
+        b. Admin Login name
+        c. Password 
+        d. Database name
+        e. Region
+        f. Create a server if server does not exist.
+        g. Subscription
+Step 3: In Networking, enter the necessary details: 
+        a. Public or Private Endpoints
+        b. Vnet Rules
+        c. Firewall if required
+        d. Connection method
+Step 4: In Additional Settings, enter the necessary details: 
+        a. Data Source DB
+        b. Server Collation
+        c. Collation DB 
+        d. Timezone
+Step 5: Then click on CREATE when you go to review+create.
+Step 6: Once depolyment is complete, go to resource to view your Azure SQL Database.
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+3. Connect the created Databases to SSMS:
+Step 1: Open the SSMS: Microsoft SQL Server Management Studio [latest version].
+Step 2: For connection, enter the necessary details: 
+        a. Server Type - Database Engine
+        b. Server Name
+        c. Authentication - SQL Server Authentication.
+        d. Username
+        e. Password
+Step 3: Click on CONNECT.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+4. To move from single DB to Pool DB:
+Step 1: Go to the Pool DB.
+STep 2: Click on CONFIGURE in overview tab.
+Step 3: Select the Databses and click on add databse in database section.
+Step 4: Select the DB you want to convert and click on apply.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+--> For removing a Database from the Pool:
+ To move from single DB to Pool DB:
+Step 1: Go to the Pool DB.
+STep 2: Click on CONFIGURE in overview tab.
+Step 3: Select the DB you want to remove and Click on REMOVE FROM POOL.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
