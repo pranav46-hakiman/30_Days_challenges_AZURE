@@ -1,0 +1,35 @@
+Day 28:
+Step 0: Sign in to your organization (https://dev.azure.com/{Your_Organization}).
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Set up an organization over Azure DevOps services and create a Private project (Note: Use Agile Process)
+Step 1: Sign in to your Azure DevOps Organisation.
+Step 2: Select new organisation.
+Step 3: Enter the name for your organization, select its hosting geography, and then select Continue.
+
+-------------------------------------------------------------------------------------------------------------------
+
+---> Creating an Private project using Agile Process:
+Step 1: Select New project.
+Step 2: Enter the following details:
+      a. Project name
+      b. Description
+      c. Agile Process
+      d. Public
+Step 3: Select Create.
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+2. Create multiple work items and create hierarchy among these work items:
+Step 1: Go to Boards and in Boards select Backlogs.
+Step 2: Click on to create an new work item.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+3. Create a sprint over Azure Boards:
+Step 1: Select SPRINTS in Boards,
+Step 2: Click on Iterations to ADD or View you sprints.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
