@@ -1,0 +1,80 @@
+Day 29:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1. Creating a SQL Database Server:
+
+--> Server 1
+Step 1: Search SQL Database Server in search bar and click on create to create one.
+Step 2: Enter the necessary details: 
+        a. Resource Group name
+        b. Subscription
+        c. Server name
+        d. Select admin
+        e. Username
+        f. Password
+Step 3: Click on CREATE in review + create tab.
+Step 4: Once depolyment is complete, go to resource to view your SQL Database Server.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--> Server 2
+Step 1: Search SQL Database Server in search bar and click on create to create one.
+Step 2: Enter the necessary details: 
+        a. Resource Group name
+        b. Subscription
+        c. Server name
+        d. Select admin
+        e. Username
+        f. Password
+Step 3: Click on CREATE in review + create tab.
+Step 4: Once depolyment is complete, go to resource to view your SQL Database Server.
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+2. Configuring Firewall for both the servers:
+
+--> Server 1
+Step 1: Go to the Networkings which is located in Security in your server.
+Step 2: Enable:
+      a. Public network access: Selected Networks
+      b. Allow Azure services and resources to access
+Step 3: Click on save.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--> Server 2
+Step 1: Go to the Networkings which is located in Security in your server.
+Step 2: Enable:
+      a. Public network access: Selected Networks
+      b. Allow Azure services and resources to access
+Step 3: Click on save.
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+3. Creating databse in SSMS:
+Step 1: Click on DB of Server2 and clcik on NEW QUERY.
+Step 2: Enter the code:
+
+create database DB-2;
+Step 3: Click on execute for creation.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+4. Syncing Databses:
+Step 1: Go to the Server and in server navigate to Databases.
+Step 2: Select the database and in the settings go to sync databases and click on sync.
+Step 3: Enter the necessary details: 
+        a. Sync Group name
+        b. Automatic sync
+        c. Sync frequency
+        d. Conflict resolution
+        e. Sync Metadata DB
+        f. Username
+        g. Password
+Step 4: Click on ok for syncing the DB.
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
