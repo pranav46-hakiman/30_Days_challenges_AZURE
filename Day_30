@@ -1,0 +1,52 @@
+Day 30:
+Step 0: Log in to the Azure Portal (https://portal.azure.com/).
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+1. Creating an Sql Databse:
+Step 1: In ovierview CLick on the "+CREATE DATABASE".
+Step 2: THe details will be automatically taken from the created ELASTIC POOL for basics.
+Step 3: In Networking, enter the necessary details: 
+        a. Public or Private Endpoints
+        b. Vnet Rules
+        c. Firewall if required
+        d. Connection method
+Step 4: In Additional Settings go with sample database.
+Step 5: click on CREATE when you go to review+create.
+Step 6: Once depolyment is complete, go to resource to view your Azure SQL Database.
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+2. Configuring Backup for your DB:
+Step 1: Go to you server.
+Step 2: Click on BAckups section and go click the Retension Policies.
+Step 3: Click on the DB and enter the following details:
+    a. Point-in-time restore 
+    b. Long term retension
+Step 3: Click on Apply.
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+3. Creation of Bacpac file:
+Step 1: Connect the server using SSMS.
+Step 2: Right click on the database and select the TAsks.
+Step 3: In tasks select EXPORT DATA-TIER APPLICATION and select next.
+Step 4: Select Local Disk and Click next and then finish.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+4. Database restore using BACPAC file:
+Step 1: Right click on the database in SSMS.
+Step 2: Click on IMPORT DATA-TIER APPLICATION.
+Step 3: Then CLick on next and open the BACPAC while you created earlier, and click on next and finish.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+5. Database restore incase of deletion or any updates via Azure:
+Step 1: Go to the server and click on SQL Databases.
+Step 2: Slect the DB.
+Step 3: In overview tab, select the Restore and select Point-in-time restore.
+Step 4: Choose the Date and Time
+Step 5: Click on review+create.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
